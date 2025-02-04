@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+    <main>
+      <section class="products">
+        <div class="wrap">
+            <div class="header">
+                <div class="back">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8 13L1.86851 7.95466C1.40623 7.57427 1.3795 6.87568 1.81137 6.46108L7.5 1" stroke="#818181" stroke-width="2" stroke-linecap="round"/> </svg>
+                    Cancelar
+                </div>
+                <h1>Produtos</h1>
+                <div class="new-order">
+                    Concluir
+                </div>
+            </div>
+    
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar produto">
+                <button type="button" class="search">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14 14L9.5 9.5" stroke="#44464E" stroke-width="2" stroke-linecap="round"/> <circle cx="6.5" cy="6.5" r="5.75" stroke="#44464E" stroke-width="2"/> </svg>
+                </button>
+            </div>
+
+            <div class="filters">
+                <select name="marca" id="marca">
+                    <option selected disabled>MARCA</option>
+                    <option value=""></option>
+                </select>
+
+                <select name="linha" id="linha">
+                    <option selected disabled>LINHA</option>
+                    <option value=""></option>
+                </select>
+
+                <select name="categoria" id="categoria">
+                    <option selected disabled>CATEGORIA</option>
+                    <option value=""></option>
+                </select>
+
+                <button type="button" class="search">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.99471 1.44218C-0.409362 3.70433 -0.692194 7.38032 1.42905 9.64247C3.40887 11.7632 6.66144 12.1874 8.9241 10.6322L12.6009 14.7323C12.8837 15.0151 13.4494 15.1565 13.7322 14.7323C14.0151 14.4495 14.1565 13.884 13.7322 13.6012L10.1968 9.50108C12.0353 7.38032 12.0353 4.12848 10.0554 1.86633C7.93419 -0.395818 4.25737 -0.678587 1.99471 1.44218ZM8.64127 8.93555C6.94427 10.4908 4.25737 10.3494 2.70179 8.65278C1.14621 6.95617 1.28763 4.26986 2.98462 2.71464C4.68162 1.15941 7.36852 1.30079 8.9241 2.99741C10.4797 4.69402 10.3383 7.38032 8.64127 8.93555Z" fill="#F5F5F5"/> </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="list-products">
+            <div class="product" data-id="">
+                <div class="details">
+                    <img src="./img/product-exemple.png" loading="lazy"/>
+                    <div>
+                        <h4>Capa p/ Botijão de Gás</h4>
+                        <p>Linha Oxford</p>
+                        <p>Ref.: 220</p>
+
+                        <div class="current-quantity">0</div>
+                    </div>
+                </div>
+                <div class="price">
+                    <strong class="price">R$ 1,95</strong>
+                    <div class="qtd-toggle">
+                        <button type="button" class="minus">
+                            <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15 1L1 0.999999" stroke="#616471" stroke-width="2" stroke-linecap="round"/> </svg>
+                        </button>
+                        <button type="button" class="plus">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.6047 7.34888L1.00008 7.34888" stroke="#616471" stroke-width="2" stroke-linecap="round"/> <path d="M8.25586 1L8.25586 14.6047" stroke="#616471" stroke-width="2" stroke-linecap="round"/> </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="totals">
+            <div>
+                0 itens adicionados
+            </div>
+            <div>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_400_1318)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 0C11.6432 0 15 3.35678 15 7.5C15 11.6432 11.6432 15 7.5 15C3.35678 15 0 11.6432 0 7.5C0 3.35678 3.35678 0 7.5 0ZM7.25064 12.1036V11.1829C6.79028 11.1253 6.42583 11.0102 6.13811 10.876C5.85038 10.7225 5.60102 10.4923 5.40921 10.1662C5.19821 9.84015 5.08312 9.43734 5.04476 8.9578L5.96547 8.78517C6.0422 9.28389 6.15729 9.64834 6.3491 9.87852C6.59847 10.2046 6.90537 10.3772 7.26982 10.4156V7.53836C6.88619 7.44246 6.50256 7.26982 6.11893 7.05882C5.8312 6.88619 5.60102 6.67519 5.44757 6.38747C5.29412 6.09974 5.21739 5.77366 5.21739 5.40921C5.21739 4.75703 5.44757 4.23913 5.90793 3.81714C6.21483 3.54859 6.67519 3.37596 7.26982 3.31841V2.87724H7.80691V3.31841C8.34399 3.37596 8.7468 3.52941 9.07289 3.79795C9.45652 4.12404 9.70588 4.5844 9.78261 5.15985L8.82353 5.3133C8.76599 4.94885 8.6509 4.68031 8.49744 4.48849C8.32481 4.29668 8.09463 4.1624 7.78772 4.10486V6.73274C8.24808 6.84783 8.55499 6.94373 8.70844 7.00128C8.99616 7.11637 9.22634 7.26982 9.39898 7.46164C9.57161 7.63427 9.72506 7.84527 9.82097 8.09463C9.91688 8.34399 9.95524 8.61253 9.95524 8.90026C9.95524 9.53325 9.76343 10.0512 9.36061 10.4923C8.9578 10.9143 8.4399 11.1445 7.78772 11.1829V12.1036H7.25064ZM7.25064 4.08568C6.88619 4.14322 6.61765 4.27749 6.40665 4.50767C6.19565 4.73785 6.09974 5.00639 6.09974 5.33248C6.09974 5.63939 6.19565 5.90793 6.36829 6.11893C6.54092 6.32992 6.84783 6.48338 7.25064 6.59847V4.08568ZM7.78772 10.4156C8.15217 10.3772 8.4399 10.2238 8.67008 9.95524C8.90026 9.6867 9.01535 9.36061 9.01535 8.97698C9.01535 8.6509 8.93862 8.38235 8.76599 8.17136C8.59335 7.97954 8.26726 7.80691 7.78772 7.67263V10.4156ZM7.5 1.76471C10.665 1.76471 13.2545 4.33504 13.2545 7.5C13.2545 10.665 10.6841 13.2545 7.5 13.2545C4.33504 13.2545 1.76471 10.6841 1.76471 7.5C1.76471 4.33504 4.33504 1.76471 7.5 1.76471Z" fill="#08B26B"/> </g> <defs> <clipPath id="clip0_400_1318"> <rect width="15" height="15" fill="white"/> </clipPath> </defs> </svg>
+                Total:
+                <strong>
+                    R$ 0,00
+                </strong>
+            </div>
+        </div>
+
+        <div class="select-table">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="step" data-step="1" style="display: none;">
+                    <p>Frete:</p>
+
+                    <div class="wrap-btn">
+                        <button type="button">FOB</button>
+                        <button type="button">CIF</button>
+                    </div>
+                </div>
+
+                <div class="step" data-step="2" style="display: none;">
+                    <p>Modalidade:</p>
+
+                    <div class="wrap-btn">
+                        <button type="button">CIA</button>
+                        <button type="button">CIB</button>
+                    </div>
+                </div>
+
+                <div class="step" data-step="3" style="display: none;">
+                    <p>Tabela:</p>
+
+                    <div class="wrap-btn">
+                        <button type="button">05</button>
+                        <button type="button">07</button>
+                        <button type="button">10</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+      </section>  
+    </main>
+
+    <script src="./dist/scripts.js"></script>
+</body>
+</html>

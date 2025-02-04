@@ -7,3 +7,22 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
+:root{
+  --font-default: "Roboto Condensed", serif;
+  --bg-color: #E8E7E7;
+  --default-padding: 20px;
+  
+  --order-status-recusado: #BD1818;
+  --order-status-pendente: #FF735B;
+  --order-status-aprovado: #3471CD;
+  --order-status-faturado: #08B26B;
+  
+}
+
+@mixin default-container{
+  background-color: var(--bg-color);
+  height: calc(100dvh - 70px);
+  max-height: calc(100dvh - 70px);
+  overflow: auto;
+}

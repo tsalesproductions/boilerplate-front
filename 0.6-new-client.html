@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+    <main>
+      <section class="new-client">
+        <div class="header">
+            <div class="back">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8 13L1.86851 7.95466C1.40623 7.57427 1.3795 6.87568 1.81137 6.46108L7.5 1" stroke="#818181" stroke-width="2" stroke-linecap="round"/> </svg>
+                Cancelar
+            </div>
+            <h1>Clientes</h1>
+        </div>
+
+        <form>
+            <div class="info client-data">
+                <h2>DADOS DO CLIENTE</h2>
+                <ul>
+                    <li>
+                        CNPJ:
+                        <input type="text" class="cnpj" id="cnpj" placeholder="(Obrigatório)" required/>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cta-area">
+                <button type="button" class="complete-data">
+                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.2849 0.5C12.9289 0.500916 12.5767 0.576708 12.2484 0.723004C11.9202 0.8693 11.6225 1.0832 11.3724 1.35238L0.966075 12.4088L0.925274 12.6277L0.205324 16.4735L0 17.5L0.966734 17.2818L4.58623 16.5169L4.79155 16.4728L15.1979 5.41638C15.4519 5.15117 15.6537 4.83487 15.7914 4.48593C15.9291 4.13699 16 3.76241 16 3.38403C16 3.00565 15.9291 2.63107 15.7914 2.28213C15.6537 1.93319 15.4519 1.61689 15.1979 1.35168C14.9478 1.08255 14.6499 0.868725 14.3216 0.722547C13.9932 0.576369 13.6409 0.500732 13.2849 0.5ZM13.2849 1.83276C13.6165 1.83276 13.9508 1.99358 14.272 2.33551C14.9123 3.01518 14.9123 3.75288 14.272 4.43324L13.7995 4.91362L11.845 2.83757L12.2977 2.33551C12.6195 1.99358 12.9532 1.83276 13.2849 1.83276ZM10.9203 3.82141L12.8735 5.89746L4.91527 14.3527C4.48564 13.4595 3.80164 12.7333 2.96075 12.2774L10.9203 3.82141ZM2.11839 13.4143C2.50787 13.5808 2.86167 13.8292 3.15853 14.1447C3.45539 14.4601 3.68918 14.836 3.84588 15.2498L1.68603 15.7085L2.11839 13.4143Z" fill="#44464E"/> </svg>
+                    COMPLETAR CADASTRO AUTOMATICAMENTE
+                </button>
+            </div>
+
+            <div class="info client-data alt">
+                <ul>
+                    <li>
+                        Nome fantasia:
+                        <input type="text" class="name" id="name" placeholder="(Obrigatório)" required/>
+                    </li>
+                    <li>
+                        Razão social:
+                        <input type="text" class="razao" id="razao" placeholder="(Obrigatório)" required/>
+                    </li>
+                    <li>
+                        Insc. Estadual:
+                        <input type="text" class="razao" id="razao" placeholder="(Obrigatório)" required/>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info contact-phone">
+                <h2>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.4607 11.9224H15.4606L15.4608 11.933C15.4992 13.8844 13.9276 15.4615 11.955 15.4615H4.04424C2.11813 15.4615 0.538462 13.8841 0.538462 11.9668V4.03324C0.538462 2.11594 2.11813 0.538462 4.04424 0.538462H11.955C13.8811 0.538462 15.4607 2.11594 15.4607 4.03324V11.9224Z" stroke="#44464E" stroke-width="1.07692"/> <path d="M7.8665 10.1051L5.91104 8.15493C5.68883 7.93333 5.68883 7.62308 5.91104 7.40147L7.59984 5.71726L4.79998 2.92502C4.7111 2.83638 4.57777 2.83638 4.48889 2.92502C2.26677 5.31837 2.31122 9.04136 4.62221 11.3461C6.93321 13.6508 10.6664 13.6951 13.0662 11.479C13.1551 11.3904 13.1551 11.2574 13.0662 11.1688L10.2664 8.37654L8.57757 10.0608C8.3998 10.2824 8.04426 10.2824 7.8665 10.1051Z" fill="#44464E"/> </svg>
+                    TELEFONE
+                </h2>
+                <ul>
+                    <li>
+                        <svg class="plus" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="9.5" cy="9.5" r="9.5" fill="#08B26B"/> <path d="M4 10H15.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/> <path d="M9.75 4L9.75 15.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/> </svg>
+                        <input type="text" class="phone" id="phone" placeholder="Clique para adicionar..." required/>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info contact-email">
+                <h2>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8844 3.91425L9.17681 9.469C8.98621 9.62692 8.74646 9.71334 8.49894 9.71334C8.25142 9.71334 8.01166 9.62692 7.82106 9.469L1.11669 3.91425C1.08071 4.02253 1.06242 4.1359 1.0625 4.25V12.75C1.0625 13.0318 1.17444 13.302 1.3737 13.5013C1.57296 13.7006 1.84321 13.8125 2.125 13.8125H14.875C15.1568 13.8125 15.427 13.7006 15.6263 13.5013C15.8256 13.302 15.9375 13.0318 15.9375 12.75V4.25C15.9379 4.13596 15.92 4.02259 15.8844 3.91425ZM2.125 2.125H14.875C15.4386 2.125 15.9791 2.34888 16.3776 2.7474C16.7761 3.14591 17 3.68641 17 4.25V12.75C17 13.3136 16.7761 13.8541 16.3776 14.2526C15.9791 14.6511 15.4386 14.875 14.875 14.875H2.125C1.56141 14.875 1.02091 14.6511 0.622398 14.2526C0.223883 13.8541 0 13.3136 0 12.75V4.25C0 3.68641 0.223883 3.14591 0.622398 2.7474C1.02091 2.34888 1.56141 2.125 2.125 2.125ZM1.90188 3.1875L7.82638 8.07819C8.01612 8.23491 8.25439 8.32091 8.50049 8.32149C8.74659 8.32207 8.98526 8.2372 9.17575 8.08138L15.1597 3.1875H1.90188Z" fill="#44464E"/> </svg>
+                    E-MAIL
+                </h2>
+                <ul>
+                    <li>
+                        <svg class="plus" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="9.5" cy="9.5" r="9.5" fill="#08B26B"/> <path d="M4 10H15.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/> <path d="M9.75 4L9.75 15.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/> </svg>
+                        <input type="email" class="email" id="email" placeholder="Clique para adicionar..." required/>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info client-data">
+                <h2>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.2665 6.06668C10.2665 5.6377 10.182 5.21292 10.0178 4.81659C9.85366 4.42026 9.61304 4.06014 9.3097 3.7568C9.00636 3.45346 8.64625 3.21284 8.24992 3.04868C7.85359 2.88451 7.42881 2.80002 6.99982 2.80002C6.57084 2.80002 6.14605 2.88451 5.74972 3.04868C5.35339 3.21284 4.99328 3.45346 4.68994 3.7568C4.3866 4.06014 4.14598 4.42026 3.98181 4.81659C3.81765 5.21292 3.73315 5.6377 3.73315 6.06668C3.73315 6.71395 3.92402 7.31595 4.24882 7.82368H4.24509L6.99982 12.1334L9.75455 7.82368H9.75129C10.0877 7.29942 10.2665 6.6896 10.2665 6.06668ZM6.99982 7.46668C6.62852 7.46668 6.27242 7.31919 6.00987 7.05663C5.74732 6.79408 5.59982 6.43799 5.59982 6.06668C5.59982 5.69538 5.74732 5.33929 6.00987 5.07674C6.27242 4.81418 6.62852 4.66668 6.99982 4.66668C7.37112 4.66668 7.72722 4.81418 7.98977 5.07674C8.25232 5.33929 8.39982 5.69538 8.39982 6.06668C8.39982 6.43799 8.25232 6.79408 7.98977 7.05663C7.72722 7.31919 7.37112 7.46668 6.99982 7.46668Z" fill="#44464E"/> <path d="M13.4608 10.4321H13.4607L13.4609 10.4427C13.4938 12.1115 12.1499 13.4615 10.4606 13.4615H3.53871C1.89037 13.4615 0.538462 12.1112 0.538462 10.4709V3.52909C0.538462 1.88879 1.89037 0.538462 3.53871 0.538462H10.4606C12.1089 0.538462 13.4608 1.88879 13.4608 3.52909V10.4321Z" stroke="#44464E" stroke-width="1.07692"/> </svg>
+                    ENDEREÇO
+                </h2>
+                <ul>
+                    <li>
+                        Rua:
+                        <input type="text" class="rua" id="rua" placeholder="(Obrigatório)" required/>
+                    </li>
+                    <li>
+                        Complemento:
+                        <input type="text" class="complemento" id="complemento" placeholder="(Obrigatório)" required/>
+                    </li>
+                    <li>
+                        CEP:
+                        <input type="text" class="cep" id="cep" placeholder="(Obrigatório)" required/>
+                    </li>
+                    <li>
+                        Bairro:
+                        <input type="text" class="bairro" id="bairro" placeholder="(Obrigatório)" required/>
+                    </li>
+                    <li>
+                        Cidade:
+                        <input type="text" class="cidade" id="cidade" placeholder="(Obrigatório)" required/>
+                    </li>
+                    <li>
+                        Estado:
+                        <input type="text" class="estado" id="estado" placeholder="(Obrigatório)" required/>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cta-area">
+                <button type="submit" class="send">
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.902832 21.3294V12.9955L9.36865 10.819L0.902832 8.64252V0.308563L23.2375 10.819L0.902832 21.3294Z" fill="#F6F6F6"/> </svg>
+                    Enviar para aprovação 
+                </button>
+            </div>
+        </form>
+
+      </section>  
+    </main>
+
+    <script src="./dist/scripts.js"></script>
+</body>
+</html>
